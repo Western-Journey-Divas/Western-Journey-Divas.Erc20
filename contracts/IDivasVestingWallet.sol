@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-interface ITaleVestingWallet {
+interface DivasVestingWallet {
     function getVestingSchedule() external view returns (
         address token,
         address beneficiary,

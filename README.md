@@ -9,9 +9,9 @@ This is a ready-to-deploy Hardhat project for the **Western Journey Divas (DIVAS
 
 ## Included
 - contracts/WDIVAS.sol             - ERC20 token (burnable, pausable, permit, ownable)
-- contracts/TaleVestingWallet.sol  - Vesting wallet contract (from PrompTale)
-- contracts/TaleVestingWalletFactory.sol - Factory to create vesting wallets
-- contracts/ITaleVestingWallet.sol  - Interface for vesting wallet
+- contracts/DivasVestingWallet.sol  - Vesting wallet contract (from PrompDivas)
+- contracts/DivasVestingWalletFactory.sol - Factory to create vesting wallets
+- contracts/DivasVestingWallet.sol  - Interface for vesting wallet
 - scripts/deploy_wdivas.js         - Deployment script for WDIVAS
 - scripts/deploy_vestingFactory.js - Deployment script for vesting factory
 - hardhat.config.js

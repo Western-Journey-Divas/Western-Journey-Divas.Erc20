@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./TaleVestingWallet.sol";
-import "./ITaleVestingWallet.sol";
+import "./DivasVestingWallet.sol";
+import "./IDivasVestingWallet.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract TaleVestingWalletFactory is Ownable {
+contract DivasVestingWalletFactory is Ownable {
     address public token;
     address[] public allVestingWallets;
 
@@ -23,7 +23,7 @@ contract TaleVestingWalletFactory is Ownable {
         uint256 _releaseMonths,
         uint256 _totalAmount
     ) external onlyOwner returns (address) {
-        TaleVestingWallet wallet = new TaleVestingWallet(
+        DivasVestingWallet wallet = new DivasVestingWallet(
             token,
             _beneficiary,
             _startTimestamp,

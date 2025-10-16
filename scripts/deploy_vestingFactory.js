@@ -11,7 +11,7 @@ async function main() {
     return;
   }
 
-  const Factory = await ethers.getContractFactory("TaleVestingWalletFactory");
+  const Factory = await ethers.getContractFactory("DivasVestingWalletFactory");
   const factory = await Factory.deploy(tokenAddress);
   await factory.waitForDeployment && await factory.waitForDeployment();
 
