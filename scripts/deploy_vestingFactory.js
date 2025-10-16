@@ -4,7 +4,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying Vesting Factory from:", deployer.address);
 
-  // pass token address after deploying WDIVAS
+  // pass token address after deploying Divas
   const tokenAddress = process.env.TOKEN_ADDRESS || "";
   if (!tokenAddress) {
     console.error("Set TOKEN_ADDRESS in env or modify the script");

@@ -4,11 +4,11 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying from:", deployer.address);
 
-  const WDIVAS = await ethers.getContractFactory("WDIVAS");
-  const wdivas = await WDIVAS.deploy();
-  await wdivas.waitForDeployment && await wdivas.waitForDeployment(); // for compat
+  const Divas = await ethers.getContractFactory("Divas");
+  const divas = await Divas.deploy();
+  await divas.waitForDeployment && await divas.waitForDeployment(); // for compat
 
-  console.log("WDIVAS deployed to:", await wdivas.getAddress ? await wdivas.getAddress() : wdivas.address);
+  console.log("Divas deployed to:", await divas.getAddress ? await divas.getAddress() : divas.address);
 }
 
 main().catch((err) => {

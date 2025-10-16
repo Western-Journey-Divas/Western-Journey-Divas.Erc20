@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract WDIVAS is ERC20Burnable, ERC20Pausable, ERC20Permit, Ownable {
+contract Divas is ERC20Burnable, ERC20Pausable, ERC20Permit, Ownable {
     constructor() ERC20("Western Journey Divas", "DIVAS") ERC20Permit("Western Journey Divas") {
         uint256 initialSupply = 10_000_000_000 * 10 ** decimals();
         _mint(msg.sender, initialSupply);

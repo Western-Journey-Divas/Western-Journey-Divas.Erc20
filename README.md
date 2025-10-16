@@ -1,4 +1,4 @@
-# WDIVAS (Western Journey Divas)
+# DIVAS (Western Journey Divas)
 
 This is a ready-to-deploy Hardhat project for the **Western Journey Divas (DIVAS)** token.
 - Token Name: **Western Journey Divas**
@@ -8,11 +8,11 @@ This is a ready-to-deploy Hardhat project for the **Western Journey Divas (DIVAS
 - Target: **BEP20 (Binance Smart Chain)** — token contract is ERC20-compatible
 
 ## Included
-- contracts/WDIVAS.sol             - ERC20 token (burnable, pausable, permit, ownable)
+- contracts/Divas.sol             - ERC20 token (burnable, pausable, permit, ownable)
 - contracts/DivasVestingWallet.sol  - Vesting wallet contract (from PrompDivas)
 - contracts/DivasVestingWalletFactory.sol - Factory to create vesting wallets
 - contracts/DivasVestingWallet.sol  - Interface for vesting wallet
-- scripts/deploy_wdivas.js         - Deployment script for WDIVAS
+- scripts/deploy_divas.js         - Deployment script for DIVAS
 - scripts/deploy_vestingFactory.js - Deployment script for vesting factory
 - hardhat.config.js
 - package.json
@@ -26,6 +26,6 @@ This is a ready-to-deploy Hardhat project for the **Western Journey Divas (DIVAS
 2. Fill `.env` with your PRIVATE_KEY and RPC URL for BSC (testnet or mainnet).
 3. Deploy to BSC (example using testnet):
    ```bash
-   npx hardhat run scripts/deploy_wdivas.js --network bscTestnet
+   npx hardhat run scripts/deploy_divas.js --network bscTestnet
    ```
 

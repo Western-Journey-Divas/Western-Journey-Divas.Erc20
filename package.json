@@ -1,7 +1,7 @@
 {
-  "name": "wdivas-token",
+  "name": "divas-token",
   "version": "1.0.0",
-  "description": "WDIVAS (Western Journey Divas) BEP20 token - Hardhat project",
+  "description": "DIVAS (Western Journey Divas) BEP20 token - Hardhat project",
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test"
