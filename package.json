@@ -1,0 +1,14 @@
+{
+  "name": "wdivas-token",
+  "version": "1.0.0",
+  "description": "WDIVAS (Western Journey Divas) BEP20 token - Hardhat project",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "hardhat": "^2.16.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
